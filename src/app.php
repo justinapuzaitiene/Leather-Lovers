@@ -10,7 +10,7 @@ $message = trim($_POST["message"]);
 if(!empty($vardas) && !empty($email) && !empty($message)) {
     if(filter_var($email, FILTER_VALIDATE_EMAIL)) {
         $from = "$email";
-        $to = "justina.puzaitiene@gmail.com";
+        $to = "youremail@gmail.com";
         $subject = "Nauja žinutė";
         $autorius = "Nuo: " . $vardas . ", " . $email;
         $zinute = htmlspecialchars($message);
